@@ -198,3 +198,55 @@ header h1 {
   margin-top: 3.3rem;
   margin-inline: auto;
 }
+
+/* ### MAIN GRID SECTION ### */
+
+.main-grid-section {
+  display: grid;
+  grid-auto-rows: minmax(314px, auto);
+  grid-template-areas:
+    "transform-img-cell"
+    "transform-cell"
+    "stand-out-img-cell"
+    "stand-out-cell"
+    "graphic-design-cell"
+    "photography-cell";
+}
+
+.transform-img-cell {
+  background-image: url(./images/mobile/image-transform.jpg);
+  grid-area: transform-img-cell;
+}
+
+.transform-cell {
+  grid-area: transform-cell;
+}
+
+.stand-out-img-cell {
+  background-image: url(./images/mobile//image-stand-out.jpg);
+  grid-area: stand-out-img-cell;
+}
+
+.stand-out-cell {
+  grid-area: stand-out-cell;
+}
+
+.transform-cell .link-container::after {
+  background-color: var(--yellow-500);
+}
+
+.stand-out-cell .link-container::after {
+  background-color: var(--red-400);
+}
+
+.graphic-design-cell {
+  background-image: url(./images/mobile/image-graphic-design.jpg);
+  color: var(--green-800);
+  grid-area: graphic-design-cell;
+}
+
+.photography-cell {
+  background-image: url(./images/mobile/image-photography.jpg);
+  color: var(--blue-800);
+  grid-area: photography-cell;
+}
