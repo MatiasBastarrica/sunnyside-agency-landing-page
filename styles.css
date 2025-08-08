@@ -17,4 +17,16 @@
   --grey-550: hsl(232, 10%, 55%);
   --grey-400: hsl(210, 4%, 67%);
   --whtie: hsl(0, 100%, 100%);
+
+  /* # TYPOGRAPHY # */
+
+  /* # font-families: Barlow && Fraunces */
+
+  --ff-barlow: "Barlow", sans-serif;
+  --ff-fraunces: "Fraunces", serif;
+
+  /* # font-weights: Barlow: 600 && Fraunces: 700, 900 */
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-900: 900;
 }
