@@ -58,10 +58,87 @@ a {
   display: none;
 }
 
+.img-cell {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-cell {
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.text-cell h2 {
+  font-size: 2rem;
+  font-weight: var(--fw-900);
+  color: var(--grey-950);
+}
+
+.text-cell p {
+  margin-top: 2rem;
+  line-height: 1.6;
+  font-size: 1.125rem;
+  color: var(--grey-550);
+}
+
+.text-cell a {
+  text-transform: uppercase;
+  font-family: var(--ff-fraunces);
+  font-weight: var(--fw-900);
+  font-size: 1.015rem;
+  letter-spacing: 1px;
+  width: min-content;
+}
+
+.text-cell .link-container {
+  position: relative;
+  width: fit-content;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
+.text-cell .link-container::after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 120%;
+  margin-inline: auto;
+  border-radius: 200px;
+  filter: opacity(30%);
+  position: absolute;
+  left: -10%;
+  bottom: -3px;
+  z-index: -1;
+}
+
+.bg-cell {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 600px;
+  text-align: center;
+  display: grid;
+  gap: 1.6rem;
+  align-content: end;
+  padding: 4rem 1rem;
+}
+
+.bg-cell h2 {
+  font-size: 1.8rem;
+  font-weight: var(--fw-900);
+}
+
+.bg-cell p {
+  line-height: 1.6;
+  font-size: 1.025rem;
+}
+
 /* ### GENERAL STYLING ### */
 
 body {
   font-family: var(--ff-barlow);
+  font-weight: var(--fw-600);
 }
 
 h1,
