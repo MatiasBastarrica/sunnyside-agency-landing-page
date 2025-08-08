@@ -250,3 +250,60 @@ header h1 {
   color: var(--blue-800);
   grid-area: photography-cell;
 }
+
+/* ### TESTIMONIALS SECTION ### */
+
+.testimonials-section {
+  padding: 3.5rem 1.5rem 5rem;
+}
+
+.testimonials-section h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1.075rem;
+  font-weight: var(--fw-900);
+  text-align: center;
+  color: var(--grey-400);
+}
+
+.testimonials-container {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.testimonial {
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+}
+
+.testimonial .profile-pic {
+  width: 80px;
+  margin-inline: auto;
+  border-radius: 200px;
+  overflow: hidden;
+}
+
+.testimonial > p {
+  color: var(--grey-600);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.testimonial-info {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.testimonial-info h3 {
+  font-size: 1.275rem;
+  font-weight: var(--fw-900);
+  color: var(--grey-950);
+}
+
+.testimonial-info p {
+  color: var(--grey-400);
+  font-size: 0.9rem;
+}
