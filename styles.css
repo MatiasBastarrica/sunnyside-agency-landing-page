@@ -16,7 +16,7 @@
   --grey-600: hsl(213, 9%, 39%);
   --grey-550: hsl(232, 10%, 55%);
   --grey-400: hsl(210, 4%, 67%);
-  --whtie: hsl(0, 100%, 100%);
+  --white: hsl(0, 100%, 100%);
 
   /* # TYPOGRAPHY # */
 
@@ -156,7 +156,7 @@ header {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  color: var(--whtie);
+  color: var(--white);
   padding: 2rem 1.5rem;
   min-height: 540px;
   /* position: relative;
