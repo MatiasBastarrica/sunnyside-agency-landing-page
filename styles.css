@@ -318,3 +318,35 @@ header h1 {
 .collage-item {
   width: 50%;
 }
+
+/* ### FOOTER ### */
+
+footer {
+  background-color: #90d4c5;
+  padding: 3.5rem 1.5rem 5.5rem;
+}
+
+footer .logo-container {
+  width: 180px;
+  margin-inline: auto;
+}
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ft-main-nav {
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 2.5rem;
+  font-size: 1.175rem;
+  color: var(--green-500);
+}
+
+.socials-nav {
+  margin-top: 5.5rem;
+  width: 55%;
+  margin-inline: auto;
+}
