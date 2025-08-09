@@ -199,6 +199,49 @@ header h1 {
   margin-inline: auto;
 }
 
+/* ### DIALOG ### */
+
+dialog {
+  margin-top: 4.8rem;
+  border: none;
+  width: 88%;
+  margin-inline: auto;
+  padding: 2.5rem 1rem;
+  font-size: 1.235rem;
+  color: var(--grey-550);
+  font-weight: var(--fw-700);
+  display: relative;
+}
+
+dialog::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 25px solid white;
+  border-left: 25px solid transparent;
+  position: absolute;
+  top: -25px;
+  right: 0;
+}
+
+dialog nav ul {
+  list-style: none;
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+}
+
+a.btn {
+  display: inline-block;
+  background-color: var(--yellow-500);
+  padding: 1rem 1.8rem;
+  color: var(--grey-950);
+  font-family: var(--ff-fraunces);
+  text-transform: uppercase;
+  border-radius: 200px;
+}
+
 /* ### MAIN GRID SECTION ### */
 
 .main-grid-section {
