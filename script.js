@@ -2,13 +2,18 @@ const navIcon = document.querySelector(".nav-icon");
 const mobileMenu = document.querySelector(".mobile-menu");
 const dialog = document.querySelector("dialog");
 
-let dialogOpen = false;
+const mobileNav = (function () {
+  let dialogOpen = false;
+  return { dialogOpen };
+})();
+
+// let dialogOpen = false;
 navIcon.addEventListener("click", () => {
-  if (dialogOpen === true) {
+  if (mobileNav.dialogOpen === true) {
     dialog.close();
-    dialogOpen = false;
+    mobileNav.dialogOpen = false;
   } else {
     dialog.show();
-    dialogOpen = true;
+    mobileNav.dialogOpen = true;
   }
 });
