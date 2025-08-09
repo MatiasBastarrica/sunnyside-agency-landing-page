@@ -307,3 +307,14 @@ header h1 {
   color: var(--grey-400);
   font-size: 0.9rem;
 }
+
+/* ### COLLAGE SECTION ### */
+
+.collage-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.collage-item {
+  width: 50%;
+}
