@@ -178,6 +178,10 @@ header {
   width: 100%;
 }
 
+.nav-icon {
+  cursor: pointer;
+}
+
 header h1 {
   margin-top: 4.5rem;
   text-align: center;
