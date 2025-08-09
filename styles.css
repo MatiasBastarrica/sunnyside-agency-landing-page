@@ -52,10 +52,23 @@ a {
   color: inherit;
 }
 
+nav ul {
+  list-style: none;
+}
+
 /* ### UTILITY CLASSES ### */
 
 .hide {
   display: none;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 1em 1.8em;
+  color: var(--grey-950);
+  font-family: var(--ff-fraunces);
+  text-transform: uppercase;
+  border-radius: 200px;
 }
 
 .img-cell {
@@ -165,9 +178,14 @@ header {
 
 .header-section {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.desktop-menu {
+  display: none;
 }
 
 .logo-container {
@@ -199,7 +217,7 @@ header h1 {
   background-image: url(./images/icon-arrow-down.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: 3.3rem;
+  margin-top: 2.6rem;
   margin-inline: auto;
 }
 
@@ -214,7 +232,7 @@ dialog {
   font-size: 1.235rem;
   color: var(--grey-550);
   font-weight: var(--fw-700);
-  display: relative;
+  align-self: flex-start;
 }
 
 dialog::before {
@@ -230,20 +248,13 @@ dialog::before {
 }
 
 dialog nav ul {
-  list-style: none;
   display: grid;
   gap: 2rem;
   justify-items: center;
 }
 
-a.btn {
-  display: inline-block;
+dialog a.btn {
   background-color: var(--yellow-500);
-  padding: 1rem 1.8rem;
-  color: var(--grey-950);
-  font-family: var(--ff-fraunces);
-  text-transform: uppercase;
-  border-radius: 200px;
 }
 
 /* ### MAIN GRID SECTION ### */
@@ -363,7 +374,9 @@ a.btn {
 }
 
 .collage-item {
-  width: 50%;
+  width: 40%;
+  /* flex-shrink: 1; */
+  flex-grow: 1;
 }
 
 /* ### FOOTER ### */
@@ -379,7 +392,6 @@ footer .logo-container {
 }
 
 footer nav ul {
-  list-style: none;
   display: flex;
   justify-content: space-between;
 }
@@ -396,4 +408,65 @@ footer nav ul {
   margin-top: 5.5rem;
   width: 55%;
   margin-inline: auto;
+}
+
+/* ### MEDIA QUERIES ### */
+
+@media (min-width: 27em) {
+  header {
+    background-image: url(./images/desktop/image-header.jpg);
+  }
+}
+
+@media (min-width: 38em) {
+  header {
+    /* min-height: 80vh; */
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: block;
+  }
+
+  .desktop-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .desktop-menu a.btn {
+    background-color: var(--white);
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 59em) {
+  header {
+    min-height: 90vh;
+    padding-inline: 2rem;
+  }
+
+  header h1 {
+    font-size: 4rem;
+    margin-top: 6rem;
+  }
+
+  .hero-section::after {
+    margin-top: 6.8rem;
+  }
+
+  .desktop-menu {
+    font-size: 1.025rem;
+  }
+
+  .desktop-menu ul {
+    gap: 3rem;
+  }
+
+  .logo-container {
+    width: 165px;
+  }
 }
