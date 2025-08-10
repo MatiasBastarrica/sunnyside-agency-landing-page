@@ -352,7 +352,7 @@ dialog a.btn {
 
 .testimonial > p {
   color: var(--grey-600);
-  font-size: 1.2rem;
+  font-size: 1.025rem;
   line-height: 1.6;
   max-width: 35ch;
   margin-inline: auto;
@@ -491,6 +491,19 @@ footer nav ul {
 
   .photography-cell {
     background-image: url(./images/desktop/image-photography.jpg);
+  }
+
+  .testimonials-section {
+    padding: 9rem 4rem;
+  }
+
+  .testimonials-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .testimonial {
+    gap: 3.5rem;
   }
 }
 
