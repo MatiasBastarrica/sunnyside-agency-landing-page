@@ -299,8 +299,16 @@ dialog a.btn {
   background-color: var(--yellow-500);
 }
 
+.transform-cell .link-container:hover:after {
+  filter: opacity(100%);
+}
+
 .stand-out-cell .link-container::after {
   background-color: var(--red-400);
+}
+
+.stand-out-cell .link-container:hover::after {
+  filter: opacity(100%);
 }
 
 .graphic-design-cell {
@@ -394,6 +402,14 @@ footer {
   padding: 3.5rem 1.5rem 5.5rem;
 }
 
+footer a:hover {
+  color: var(--white);
+}
+
+footer a:hover svg path {
+  fill: var(--white);
+}
+
 footer .logo-container {
   width: 160px;
   margin-inline: auto;
@@ -450,6 +466,12 @@ footer nav ul {
     background-color: var(--white);
     font-size: 0.8rem;
   }
+
+  .desktop-menu a.btn:hover {
+    color: var(--white);
+    background-color: #6dcdff;
+  }
+
   /* # MAIN GRID # */
 
   .main-grid-section {
