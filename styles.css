@@ -505,6 +505,10 @@ footer nav ul {
   .testimonial {
     gap: 3.5rem;
   }
+
+  .collage-item {
+    width: 25%;
+  }
 }
 
 @media (min-width: 59em) {
