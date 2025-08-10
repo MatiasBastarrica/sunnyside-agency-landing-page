@@ -354,6 +354,8 @@ dialog a.btn {
   color: var(--grey-600);
   font-size: 1.2rem;
   line-height: 1.6;
+  max-width: 35ch;
+  margin-inline: auto;
 }
 
 .testimonial-info {
