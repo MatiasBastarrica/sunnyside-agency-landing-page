@@ -79,20 +79,25 @@ a.btn {
 
 .text-cell {
   text-align: center;
-  padding: 4rem 1.5rem;
+  padding: 4em 1.5em;
+  display: grid;
+  gap: 2rem;
 }
 
 .text-cell h2 {
   font-size: 2rem;
   font-weight: var(--fw-900);
   color: var(--grey-950);
+  max-width: 13ch;
+  margin-inline: auto;
 }
 
 .text-cell p {
-  margin-top: 2rem;
   line-height: 1.6;
   font-size: 1.125rem;
   color: var(--grey-550);
+  max-width: 44ch;
+  margin-inline: auto;
 }
 
 .text-cell a {
@@ -108,7 +113,6 @@ a.btn {
   position: relative;
   width: fit-content;
   margin-inline: auto;
-  margin-top: 2rem;
 }
 
 .text-cell .link-container::after {
@@ -419,8 +423,9 @@ footer nav ul {
 }
 
 @media (min-width: 38em) {
+  /* # HEADER # */
   header {
-    /* min-height: 80vh; */
+    min-height: 80vh;
   }
 
   .nav-icon {
@@ -441,9 +446,52 @@ footer nav ul {
     background-color: var(--white);
     font-size: 0.8rem;
   }
+  /* # MAIN GRID # */
+
+  .main-grid-section {
+    grid-template-areas:
+      "transform-cell transform-img-cell"
+      "stand-out-img-cell stand-out-cell"
+      "graphic-design-cell photography-cell";
+  }
+
+  .text-cell {
+    text-align: start;
+    justify-content: center;
+    padding: 8em 2.5em;
+  }
+
+  .text-cell h2 {
+    margin-inline: unset;
+  }
+
+  .text-cell p {
+    margin-inline: unset;
+  }
+
+  .text-cell .link-container {
+    margin-inline: unset;
+  }
+
+  .transform-img-cell {
+    background-image: url(./images/desktop/image-transform.jpg);
+  }
+
+  .stand-out-img-cell {
+    background-image: url(./images/desktop/image-stand-out.jpg);
+  }
+
+  .graphic-design-cell {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+  }
+
+  .photography-cell {
+    background-image: url(./images/desktop/image-photography.jpg);
+  }
 }
 
 @media (min-width: 59em) {
+  /* # HEADER # */
   header {
     min-height: 90vh;
     padding-inline: 2rem;
