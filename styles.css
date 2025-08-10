@@ -509,6 +509,19 @@ footer nav ul {
   .collage-item {
     width: 25%;
   }
+
+  footer {
+    padding: 5rem 1.5rem;
+  }
+
+  .ft-main-nav {
+    width: 28%;
+  }
+
+  .socials-nav {
+    width: 15%;
+    margin-top: 3.5rem;
+  }
 }
 
 @media (min-width: 59em) {
