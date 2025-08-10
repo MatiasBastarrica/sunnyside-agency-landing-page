@@ -149,6 +149,8 @@ a.btn {
 .bg-cell p {
   line-height: 1.6;
   font-size: 1.025rem;
+  max-width: 40ch;
+  margin-inline: auto;
 }
 
 /* ### GENERAL STYLING ### */
